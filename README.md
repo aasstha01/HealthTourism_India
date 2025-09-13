@@ -1,7 +1,10 @@
 # HealthTourism_India
 Skip expensive hospitals back home. HealthTourism India connects you with trusted Indian doctors, low-cost surgeries, and complete travel support — saving you money without compromising quality.
 
-<video width="600" controls>
-  <source src="https://github.com/aasstha01/HealthTourism_India/blob/main/Untitled%20video%20-%20Made%20with%20Clipchamp.mp4?raw=true" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+## Project Screenshots
+
+![Screenshot 1](images/Screenshot%20(162).png)
+![Screenshot 2](images/Screenshot%20(163).png)
+![Screenshot 3](images/Screenshot%20(164).png)
+![Screenshot 4](images/Screenshot%20(165).png)
+![Screenshot 5](images/Screenshot%20(166).png)
