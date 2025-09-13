@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>India Health Tourism - World-Class Medical Care & Wellness</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav container">
+            <div class="nav__brand">
+                <h2>🏥 India Health Tourism</h2>
+            </div>
+            <div class="nav__menu">
+                <a href="#home" class="nav__link">Home</a>
+                <a href="#treatments" class="nav__link">Treatments</a>
+                <a href="#providers" class="nav__link">Providers</a>
+                <a href="#planning" class="nav__link">Planning</a>
+                <a href="#resources" class="nav__link">Resources</a>
+                <a href="#booking" class="nav__link">Book Now</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero__content container">
+            <div class="hero__text">
+                <h1 class="hero__title">World-Class Healthcare at Affordable Prices</h1>
+                <p class="hero__subtitle">Experience premium medical treatments and authentic wellness programs in India - save up to 90% while receiving care from internationally accredited hospitals and renowned specialists.</p>
+                <div class="hero__cta">
+                    <button class="btn btn--primary btn--lg">Explore Treatments</button>
+                    <button class="btn btn--secondary btn--lg">Plan Your Journey</button>
+                </div>
+            </div>
+            <div class="hero__stats">
+                <div class="stat-card">
+                    <div class="stat-card__number">2.4M+</div>
+                    <div class="stat-card__label">Annual Medical Tourists</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-card__number">500+</div>
+                    <div class="stat-card__label">JCI Accredited Hospitals</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-card__number">60-90%</div>
+                    <div class="stat-card__label">Cost Savings</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-card__number">50+</div>
+                    <div class="stat-card__label">Medical Specialties</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Search -->
+    <section class="quick-search">
+        <div class="container">
+            <div class="search-form">
+                <h3>Find Your Perfect Treatment</h3>
+                <div class="search-inputs">
+                    <select id="treatment-type" class="form-control">
+                        <option value="">Select Treatment Type</option>
+                        <option value="medical">Medical Treatments</option>
+                        <option value="wellness">Wellness & Ayurveda</option>
+                        <option value="dental">Dental Care</option>
+                        <option value="cosmetic">Cosmetic Surgery</option>
+                    </select>
+                    <select id="destination" class="form-control">
+                        <option value="">Select Destination</option>
+                        <option value="delhi">Delhi</option>
+                        <option value="mumbai">Mumbai</option>
+                        <option value="chennai">Chennai</option>
+                        <option value="bangalore">Bangalore</option>
+                        <option value="rishikesh">Rishikesh</option>
+                        <option value="kerala">Kerala</option>
+                    </select>
+                    <button class="btn btn--primary search-btn">Search Treatments</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Treatment Categories -->
+    <section id="treatments" class="treatments">
+        <div class="container">
+            <div class="section-header">
+                <h2>Medical & Wellness Treatments</h2>
+                <p>Comprehensive healthcare solutions from world-renowned specialists</p>
+            </div>
+            <div class="treatment-grid" id="treatment-grid">
+                <!-- Treatment cards will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Healthcare Providers -->
+    <section id="providers" class="providers">
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured Healthcare Providers</h2>
+                <p>Top-rated hospitals, clinics, and wellness centers across India</p>
+            </div>
+            <div class="provider-grid" id="provider-grid">
+                <!-- Provider cards will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Travel Planning Tools -->
+    <section id="planning" class="planning">
+        <div class="container">
+            <div class="section-header">
+                <h2>Plan Your Medical Journey</h2>
+                <p>Complete travel assistance for your healthcare experience in India</p>
+            </div>
+            <div class="planning-tools">
+                <div class="tool-card">
+                    <div class="tool-icon">✈️</div>
+                    <h3>Travel Packages</h3>
+                    <p>Customized medical tourism packages including treatment, accommodation, and sightseeing</p>
+                    <button class="btn btn--primary">Build Package</button>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-icon">🏨</div>
+                    <h3>Accommodation</h3>
+                    <p>Hospital-affiliated hotels and recovery centers near your treatment facility</p>
+                    <button class="btn btn--primary">Find Hotels</button>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-icon">📋</div>
+                    <h3>Visa Assistance</h3>
+                    <p>Complete guidance for medical visa application and documentation</p>
+                    <button class="btn btn--primary">Get Help</button>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-icon">🕌</div>
+                    <h3>Cultural Guide</h3>
+                    <p>Local customs, language basics, and cultural experiences during recovery</p>
+                    <button class="btn btn--primary">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cost Calculator -->
+    <section class="calculator">
+        <div class="container">
+            <div class="section-header">
+                <h2>Treatment Cost Calculator</h2>
+                <p>Get instant cost estimates and compare with your home country</p>
+            </div>
+            <div class="calculator-form">
+                <div class="calc-inputs">
+                    <div class="form-group">
+                        <label class="form-label">Treatment Type</label>
+                        <select id="calc-treatment" class="form-control">
+                            <option value="">Select Treatment</option>
+                            <option value="cardiac">Cardiac Surgery</option>
+                            <option value="orthopedic">Orthopedic Surgery</option>
+                            <option value="cancer">Cancer Treatment</option>
+                            <option value="cosmetic">Cosmetic Surgery</option>
+                            <option value="dental">Dental Care</option>
+                            <option value="eye">Eye Surgery</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Your Country</label>
+                        <select id="calc-country" class="form-control">
+                            <option value="usa">United States</option>
+                            <option value="uk">United Kingdom</option>
+                            <option value="canada">Canada</option>
+                            <option value="australia">Australia</option>
+                            <option value="germany">Germany</option>
+                        </select>
+                    </div>
+                    <button class="btn btn--primary" onclick="calculateCost()">Calculate Savings</button>
+                </div>
+                <div class="cost-results" id="cost-results" style="display: none;">
+                    <div class="cost-comparison">
+                        <div class="cost-item">
+                            <div class="cost-label">Cost in Your Country</div>
+                            <div class="cost-value" id="home-cost">$0</div>
+                        </div>
+                        <div class="cost-item">
+                            <div class="cost-label">Cost in India</div>
+                            <div class="cost-value india-cost" id="india-cost">$0</div>
+                        </div>
+                        <div class="cost-item savings">
+                            <div class="cost-label">Your Savings</div>
+                            <div class="cost-value" id="savings-amount">$0</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Patient Resources -->
+    <section id="resources" class="resources">
+        <div class="container">
+            <div class="section-header">
+                <h2>Patient Resources</h2>
+                <p>Everything you need for a successful medical journey to India</p>
+            </div>
+            <div class="resource-grid">
+                <div class="resource-card">
+                    <h3>Medical Visa Guide</h3>
+                    <div class="checklist">
+                        <div class="check-item">✅ Required documents</div>
+                        <div class="check-item">✅ Application process</div>
+                        <div class="check-item">✅ Processing timeline</div>
+                        <div class="check-item">✅ Extension procedures</div>
+                    </div>
+                </div>
+                <div class="resource-card">
+                    <h3>Pre-Travel Checklist</h3>
+                    <div class="checklist">
+                        <div class="check-item">✅ Medical records preparation</div>
+                        <div class="check-item">✅ Insurance verification</div>
+                        <div class="check-item">✅ Accommodation booking</div>
+                        <div class="check-item">✅ Local transport planning</div>
+                    </div>
+                </div>
+                <div class="resource-card emergency">
+                    <h3>Emergency Contacts</h3>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <strong>24/7 Medical Helpline:</strong><br>
+                            📞 +91 1066 (National)<br>
+                            📞 +91 11 2334 4444 (Delhi)
+                        </div>
+                        <div class="contact-item">
+                            <strong>Tourist Helpline:</strong><br>
+                            📞 1363 (Toll Free)<br>
+                            📧 info@incredibleindia.org
+                        </div>
+                    </div>
+                </div>
+                <div class="resource-card">
+                    <h3>Frequently Asked Questions</h3>
+                    <div class="faq-preview">
+                        <div class="faq-item">❓ How do I choose the right hospital?</div>
+                        <div class="faq-item">❓ What about language barriers?</div>
+                        <div class="faq-item">❓ Is follow-up care available?</div>
+                        <div class="faq-item">❓ How do I manage payments?</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>Patient Success Stories</h2>
+                <p>Real experiences from patients who chose India for their healthcare needs</p>
+            </div>
+            <div class="testimonial-grid" id="testimonial-grid">
+                <!-- Testimonials will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking" class="booking">
+        <div class="container">
+            <div class="section-header">
+                <h2>Start Your Healthcare Journey</h2>
+                <p>Get personalized assistance from our medical tourism experts</p>
+            </div>
+            <div class="booking-form">
+                <form id="consultation-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label class="form-label">Full Name *</label>
+                            <input type="text" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Email Address *</label>
+                            <input type="email" class="form-control" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label class="form-label">Phone Number *</label>
+                            <input type="tel" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Country *</label>
+                            <select class="form-control" required>
+                                <option value="">Select Your Country</option>
+                                <option value="usa">United States</option>
+                                <option value="uk">United Kingdom</option>
+                                <option value="canada">Canada</option>
+                                <option value="australia">Australia</option>
+                                <option value="germany">Germany</option>
+                                <option value="france">France</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Treatment of Interest</label>
+                        <select class="form-control">
+                            <option value="">Select Treatment</option>
+                            <option value="cardiac">Cardiac Surgery</option>
+                            <option value="orthopedic">Orthopedic Surgery</option>
+                            <option value="cancer">Cancer Treatment</option>
+                            <option value="cosmetic">Cosmetic Surgery</option>
+                            <option value="dental">Dental Care</option>
+                            <option value="eye">Eye Surgery</option>
+                            <option value="ayurveda">Ayurveda Treatment</option>
+                            <option value="yoga">Yoga Retreat</option>
+                            <option value="naturopathy">Naturopathy</option>
+                            <option value="detox">Detox Programs</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Message</label>
+                        <textarea class="form-control" rows="4" placeholder="Tell us about your specific needs, timeline, and any questions you have..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn--primary btn--full-width">Request Free Consultation</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__section">
+                    <h3>India Health Tourism</h3>
+                    <p>Your trusted partner for world-class healthcare and authentic wellness experiences in India.</p>
+                    <div class="footer__social">
+                        <a href="#" class="social-link">📧 info@indiahealthtourism.com</a>
+                        <a href="#" class="social-link">📞 +91 80000 12345</a>
+                    </div>
+                </div>
+                <div class="footer__section">
+                    <h4>Medical Treatments</h4>
+                    <ul class="footer__links">
+                        <li><a href="#">Cardiac Surgery</a></li>
+                        <li><a href="#">Orthopedic Surgery</a></li>
+                        <li><a href="#">Cancer Treatment</a></li>
+                        <li><a href="#">Cosmetic Surgery</a></li>
+                        <li><a href="#">Dental Care</a></li>
+                        <li><a href="#">Eye Surgery</a></li>
+                    </ul>
+                </div>
+                <div class="footer__section">
+                    <h4>Wellness Programs</h4>
+                    <ul class="footer__links">
+                        <li><a href="#">Ayurveda Treatment</a></li>
+                        <li><a href="#">Yoga Retreats</a></li>
+                        <li><a href="#">Naturopathy</a></li>
+                        <li><a href="#">Detox Programs</a></li>
+                        <li><a href="#">Spa Treatments</a></li>
+                        <li><a href="#">Meditation Centers</a></li>
+                    </ul>
+                </div>
+                <div class="footer__section">
+                    <h4>Support</h4>
+                    <ul class="footer__links">
+                        <li><a href="#">Travel Planning</a></li>
+                        <li><a href="#">Visa Assistance</a></li>
+                        <li><a href="#">Accommodation</a></li>
+                        <li><a href="#">Insurance Help</a></li>
+                        <li><a href="#">24/7 Support</a></li>
+                        <li><a href="#">Emergency Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2025 India Health Tourism. All rights reserved. | JCI Accredited Network Partner</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
